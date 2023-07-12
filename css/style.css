@@ -87,8 +87,8 @@ button {
     color: var(--headerTitle);
     padding: 5px 20px;
     margin-top: 10px;
-    border: solid white 2px;
     border-radius: 5px;
+    border: none;
 }
 
 /* Content styling */
@@ -140,6 +140,10 @@ blockquote {
     justify-content: center;
     align-items: center;
     gap:100px;
+}
+
+.call-to-action button {
+    border: solid white 2px;
 }
 
 /* Footer styling */
