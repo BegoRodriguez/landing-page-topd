@@ -4,7 +4,8 @@
 :root {
     --backgroundColor: #1F2937;
     --headerTitle: #F9FAF8;
-    --headerText: #E5E7EB
+    --headerText: #E5E7EB;
+    --blueButtons: #3882F6;
 }
 
 /* CSS Reset */
@@ -31,6 +32,13 @@ body {
 
 .up-header {
     justify-content: space-between;
+    align-items: center;
+    padding-bottom: 60px;
+}
+
+.low-header {
+    gap: 30px;
+    padding-bottom: 60px;
 }
 
 ul {
@@ -41,4 +49,38 @@ ul {
 ul a {
     text-decoration: none;
     color: var(--headerText);
+}
+
+h1, h4 {
+    color: var(--headerTitle);
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h4 {
+    font-size: 24px;
+}
+
+.text-header {
+    font-size: 18px;
+}
+
+.image-placeholder {
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 500px;
+    flex-shrink: 0;
+}
+
+button {
+    background-color: var(--blueButtons) ;
+    color: var(--headerText);
+    padding: 5px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
 }
