@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+Office&display=swap');
 
 /* Variables to change colors easily */
 :root {
-    --backgroundColor: #1F2937;
-    --headerTitle: #F9FAF8;
-    --headerText: #E5E7EB;
-    --blueButtons: #3882F6;
+    --backgroundColor: #4d302d;
+    --headerTitle: whitesmoke;
+    --headerText: #ebe4d2;
+    --blueButtons: #af1f24;
 }
 
 /* CSS Reset */
@@ -16,7 +18,7 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family:'Ysabeau Office', sans-serif;
 }
 
 /* Header styling */
@@ -39,9 +41,26 @@ body {
 .low-header {
     gap: 30px;
     padding-bottom: 60px;
+    justify-content: center;
+    align-items: center;
+}
+
+/*.logo {
+    width: 100px;
+    height: 100px;
+    margin: 0;
+    padding: 0;
+    background-color: var(--headerTitle);
+}
+*/
+.responsive {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 ul {
+    flex: 1;
     gap:1em;
     list-style: none;
 }
@@ -51,18 +70,27 @@ ul a {
     color: var(--headerText);
 }
 
+h1, h2, h3, h4 {
+    font-family: 'Amatic SC', cursive;
+}
+
 h1, h3, h4 {
     color: var(--headerTitle);
 }
 
 h1 {
-    font-size: 48px;
+    font-size: 64px;
 }
 
 h2 {
     color: var(--backgroundColor);
     text-align: center;
+    font-size: 48px;
     padding: 30px;
+}
+
+h3 {
+    font-size: 36px;
 }
 
 h4 {
@@ -78,8 +106,12 @@ h4 {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-width: 450px;
+    height: 250px;
+    width: 450px;
     flex-shrink: 0;
+    overflow: hidden;
+    border-radius: 10px;
+    
 }
 
 button {
@@ -103,8 +135,9 @@ button {
 .image-card {
     width: 150px;
     height: 150px;
-    border: 3px solid var(--blueButtons);
+    border: 3px solid var(--headerText);
     border-radius: 10px;
+    overflow: hidden;
 }
 
 .text-card {
