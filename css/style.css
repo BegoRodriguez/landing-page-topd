@@ -18,7 +18,27 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+/* Header styling */
 .header {
     background-color: var(--backgroundColor);
+    color: var(--headerText);
+    padding: 15px 200px;
+}
+
+.up-header, .nav-links ul, .low-header {
+    display: flex;
+}
+
+.up-header {
+    justify-content: space-between;
+}
+
+ul {
+    gap:1em;
+    list-style: none;
+}
+
+ul a {
+    text-decoration: none;
     color: var(--headerText);
 }
