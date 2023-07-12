@@ -23,7 +23,7 @@ body {
 .header {
     background-color: var(--backgroundColor);
     color: var(--headerText);
-    padding: 15px 200px;
+    padding: 15px 300px;
 }
 
 .up-header, .nav-links ul, .low-header {
@@ -51,7 +51,7 @@ ul a {
     color: var(--headerText);
 }
 
-h1, h4 {
+h1, h3, h4 {
     color: var(--headerTitle);
 }
 
@@ -60,7 +60,9 @@ h1 {
 }
 
 h2 {
+    color: var(--backgroundColor);
     text-align: center;
+    padding: 30px;
 }
 
 h4 {
@@ -76,15 +78,74 @@ h4 {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-width: 500px;
+    min-width: 450px;
     flex-shrink: 0;
 }
 
 button {
-    background-color: var(--blueButtons) ;
+    background-color: var(--blueButtons);
     color: var(--headerTitle);
     padding: 5px 20px;
     margin-top: 10px;
-    border: none;
+    border: solid white 2px;
     border-radius: 5px;
+}
+
+/* Content styling */
+.cards {
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:36px;
+    padding: 5px 300px;
+}
+
+.image-card {
+    width: 150px;
+    height: 150px;
+    border: 3px solid var(--blueButtons);
+    border-radius: 10px;
+}
+
+.text-card {
+    color: var(--backgroundColor);
+    width: 150px;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.quote {
+    color: var(--backgroundColor);
+    background-color: var(--headerText);
+    margin-top: 50px;
+    padding: 100px 400px;
+}
+
+blockquote {
+    font-size: 36px;
+    font-style: italic;
+}
+
+.author {
+    font-weight: bold;
+    text-align: right;
+}
+
+.call-to-action {
+    color: var(--headerText);
+    background-color: var(--blueButtons);
+    margin: 60px 300px;
+    padding: 50px 20px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:100px;
+}
+
+/* Footer styling */
+.footer {
+    background-color: var(--backgroundColor);
+    color: var(--headerText);
+    text-align: center;
+    padding: 20px 300px;
 }
