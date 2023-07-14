@@ -25,7 +25,7 @@ body {
 .header {
     background-color: var(--backgroundColor);
     color: var(--headerText);
-    padding: 15px 300px;
+    padding: 15px;
 }
 
 .up-header, .nav-links ul, .low-header {
@@ -35,7 +35,9 @@ body {
 .up-header {
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 60px;
+    padding: 20px 0;
+    margin-left: 10vw;
+    margin-right: 10vw;
 }
 
 .low-header {
@@ -45,6 +47,17 @@ body {
     align-items: center;
 }
 
+.image-placeholder {
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    width: 450px;
+    overflow: hidden;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
 .responsive {
     width: 100%;
     height: 100%;
@@ -52,9 +65,11 @@ body {
 }
 
 ul {
-    flex: 1;
+    margin: 0;
+    padding: 0;
     gap:1em;
     list-style: none;
+    flex: 1;
 }
 
 ul a {
@@ -93,19 +108,6 @@ h4 {
     font-size: 18px;
 }
 
-.image-placeholder {
-    background-color: grey;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 250px;
-    width: 450px;
-    flex-shrink: 0;
-    overflow: hidden;
-    border-radius: 10px;
-    
-}
-
 button {
     background-color: var(--blueButtons);
     color: var(--headerTitle);
@@ -121,7 +123,7 @@ button {
     justify-content: center;
     flex-wrap: wrap;
     gap:36px;
-    padding: 5px 300px;
+    padding: 5px;
 }
 
 .image-card {
@@ -143,10 +145,11 @@ button {
     color: var(--backgroundColor);
     background-color: var(--headerText);
     margin-top: 50px;
-    padding: 100px 400px;
+    padding: 100px;
 }
 
 blockquote {
+   text-align: center;
     font-size: 36px;
     font-style: italic;
 }
@@ -154,12 +157,13 @@ blockquote {
 .author {
     font-weight: bold;
     text-align: right;
+    font-size: 18px;
 }
 
 .call-to-action {
     color: var(--headerText);
     background-color: var(--blueButtons);
-    margin: 60px 300px;
+    margin: 60px;
     padding: 50px 20px;
     display:flex;
     justify-content: center;
@@ -176,5 +180,16 @@ blockquote {
     background-color: var(--backgroundColor);
     color: var(--headerText);
     text-align: center;
-    padding: 20px 300px;
+    padding: 20px;
 }
+
+@media (max-width: 768px) {
+    .image-placeholder { 
+        width: 200px;
+    }
+
+    .call-to-action  {
+        gap: 20px;
+    }
+  
+  }
