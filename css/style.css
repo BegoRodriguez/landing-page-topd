@@ -157,6 +157,7 @@ blockquote {
     font-weight: bold;
     text-align: right;
     font-size: 18px;
+    padding-top: 1em;
 }
 
 .call-to-action {
